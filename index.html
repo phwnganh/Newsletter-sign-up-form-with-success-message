@@ -55,12 +55,16 @@
           <li class="feature">And much more!</li>
         </ul>
 
-        <form method="post">
+        <form method="post" id="subscribe-form" novalidate>
+          <div class="email-message">
           <label for="email">Email address</label>
+          <p class="error-message"></p>
+          </div>
           <input
             type="email"
             name="email" 
             id="email"
+            required
             placeholder="email@company.com"
           />
           <button class="subscribe-submit-button">

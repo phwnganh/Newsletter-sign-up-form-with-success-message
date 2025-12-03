@@ -75,6 +75,30 @@ form {
   gap: 8px;
 }
 
+.email-message{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.error-message{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: red;
+}
+
+#email.error{
+    border: 1px solid red;
+    background-color: '#FFE7E6';
+    color: red;
+}
+
+#email.error::placeholder{
+    color: red;
+}
+
+
 label {
   color: hsl(234, 29%, 20%);
   font-size: 0.75rem;
@@ -101,6 +125,11 @@ input::placeholder {
   border-radius: 8px;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.subscribe-submit-button:hover{
+    background-image: linear-gradient(to right, #FF6A3A, #FF527B);
+    border-image: linear-gradient(to right, #FF6A3A, #FF527B);
 }
 
 @media (max-width: 768px) {
