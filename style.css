@@ -8,7 +8,6 @@
 body {
   margin: 0 auto;
   min-height: 100vh;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -107,8 +106,8 @@ input::placeholder {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    padding: 40px;
-    align-items: start;
+    margin: 40px;
+    /* align-items: center; */
   }
 
   .container-img {
@@ -122,6 +121,11 @@ input::placeholder {
   .container-img-tablet {
     display: block !important;
     width: 100%;
+  }
+
+  .container-img-tablet img{
+    max-width: 100%;
+    display: block;
   }
 
   .container-text {
@@ -146,10 +150,11 @@ input::placeholder {
     border-radius: 0 !important;
     padding: 0;
     gap: 32px;
+    margin: 0;
   }
 
   .container-text {
-    padding: 0 24px 40px;
+    padding: 0 20px 36px;
   }
 
   .stay-updated-title {
