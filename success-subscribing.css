@@ -47,6 +47,12 @@ body {
     padding: 16px 64px;
 }
 
+.dismiss-button:hover{
+    background-image: linear-gradient(to right, #FF6A3A, #FF527B);
+    border-image: linear-gradient(to right, #FF6A3A, #FF527B);
+    box-shadow: 0 16px 32px 0 rgba(255, 82, 123, 0.4);
+}
+
 @media (max-width: 576px) {
     .container{
         padding: 36px 36px;
