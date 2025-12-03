@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+  max-width: 904px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(234, 29%, 20%);
+  font-family: 'Roboto';
+}
+
+.container {
+  border-radius: 36px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 64px;
+  padding: 24px 32px;
+}
+
+.container .container-text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.stay-updated-title{
+    font-size: 3.5rem;
+    color: hsl(234, 29%, 20%);
+}
+
+.invitation{
+    font-size: 1rem;
+    line-height: 1.5;
+    color: hsl(234, 29%, 20%);
+}
+
+.invitation-features{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.feature::before{
+    content: url("assets/images/icon-list.svg");
+}
+
+.feature{
+    display: flex;
+    gap: 16px;
+    line-height: 1.5;
+    color: hsl(234, 29%, 20%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label{
+    color: hsl(234, 29%, 20%);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+input{
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid hsl(0, 0%,58%);
+}
+
+input::placeholder{
+    color: hsl(0, 0%,58%);
+
+}
+
+.subscribe-submit-button{
+    margin-top: 16px;
+    background-color: hsl(234, 29%, 20%);
+    border: 1px solid hsl(234, 29%, 20%);
+    color: white;
+    padding: 16px 72px;
+    border-radius: 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
